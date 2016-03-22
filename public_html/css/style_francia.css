@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 html { /*Afecta a todo el codigo */
     font-family: Times New Roman;  /*Le da por defecto a toda la pagina el tipo de texto Times New Roman */
     background:#26768F; 
@@ -66,16 +64,17 @@ img{ /*etiqueta imagen*/
 }
 
 .menu li  { /*etiqueta li dentro de la clase menu*/
-    padding: 3px; /*padding de 3px*/
+    padding: 30px; /*padding de 3px*/
     margin-bottom: 10px;/*margen de 10px*/
     background-color : #4D8D32;/*color verde oliva de fondo*/ 
     color: #ffffff; /*letra blanca*/
     text-align: center;/*texto centrado*/
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgb(0,0,0,0.24);/*sombra de cada opcion*/ 
-    -webkit-transition-property: width;/*ancho del elemnto se afecta con animacion*/
-    -webkit-transition-duration: 5s;/*duracion de 5s*/
-    transition-property: width;/*ancho del elemnto se afecta con animacion*/
-    transition-duration: 5s;  /*duracion de 5s*/
+    font-size: 40px;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgb(0,0,0,0.24);/*sombra de cada opcion*/ 
+    /*-webkit-transition-property: width;/*ancho del elemnto se afecta con animacion*/
+    /*-webkit-transition-duration: 5s;/*duracion de 5s*/
+    /*transition-property: width;/*ancho del elemnto se afecta con animacion*/
+    /*transition-duration: 5s;  /*duracion de 5s*/
 }
 
 .menu li:hover { /*etiqueta li dentro de la clase menu cuando el cursor esta encima*/
@@ -113,11 +112,11 @@ img{ /*etiqueta imagen*/
 
 .menu{/*caja del menu que esta contenida en la caja principal*/
     width:20%;/*ancho al 20%*/
+    height: 1000%;
     /*position:relative;/*poicion absolute respecto a la caja contenedora*/
-    top:2px;/*a 2px del margen de arriba*/
-    botton:30px;/*no px*/
-    left:10px;/*no px*/
-    right:90px;/*no px*/
+    top:20px;/*a 2px del margen de arriba*/
+    left:10px;
+    right:90px;
     float:right;
 
 }
@@ -147,7 +146,7 @@ img{ /*etiqueta imagen*/
 .footer{/*caja colu 3 dentro de la caja principal*/
     width:100%;/*ancho al 100%*/
     position:relative;/*posicion absoluta dentro de la caja contenedora*/
-    bottom:-3000px;/*distancia desde el margen margen inferior*/
+    bottom:-100px;/*distancia desde el margen margen inferior*/
     float:left;
 }
 
@@ -159,6 +158,9 @@ img{ /*etiqueta imagen*/
     background:#A4D78D;/*color de fondo verde claro*/
 }
 
+* {
+    box-sizing: border-box;
+}
 
 @media only screen and (max-width: 480px) {/*cuando la pantalla sea menor a 480 px responsive desing*/
 

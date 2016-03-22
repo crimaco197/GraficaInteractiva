@@ -1,141 +1,56 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<!doctype html>
 <html>
     <head>
-        <title>Grafica</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <meta charset="UTF-8"> <!-- Codificación con Acentos Correctos -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="Stylesheet" href="css/hoja_de_Stilo.css" type="text/css">
+        <meta chartset="UTF-8"><!--codigo caracteres-->
+        <title>GEOLOGIA</title><!--titulo paste�a-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--info tama�o de pagina-->
+        <link rel="shortcut icon" type="image/x-icon" href="imagenes/martillo.gif"><!--icono en la pesta�a-->
+        <link rel="Stylesheet" href="css/style_francia.css"><!--pagina de estilos-->
     </head>
     <body>
-        <select name="plantilla">
-            <option value="">Selecciona una plantilla  </option>
-            <option value="pcl">Selecciona PC  </option>
-            <option value="pchd">Selecciona HD  </option>
-            <option value="movil">Selecciona CEL  </option>
-            <option value="tablet">Selecciona CEL  </option>
-        </select>
-        <hr>
-        <div id="contenedor">
-            <header>
+        <div class="head"><!--encabezado--> 
+            <h1>GEOLOGIA</h1> 
+        </div>
 
-                <div id ="tituloPagina">
-                    <div id="logo">
-                        <br><hr> 
-                    </div>
+        <div class="principal"><!--caja principal que acoje todo-->
 
-                    <h1>Titulo de la pagina Princial</h1>
-                    <h2>Slogan de la pagina inicial</h2>
+            <div class="menu"> <!--caja menu-->
+                <ul><!--listado del menu-->
+                    <li><a href="index.html">Francia</a></li>
+                    <li><a href="paris.html">Capital</a></li>
+                    <li><a href="cultura.html">Cultura</a></li>
+                    <li><a href="arco_del_triunfo.html">Arco del Triunfo</a></li>
+                    <li><a href="torre_eiffel.html">Torre Eiffel</a></li>
+                    <li><a href="site_map.html">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="texto"><!--caja de informacion-->
+                <h1>Que es?</h1> <!--titulo-->
+                <p>La Geologia es la ciencia que estudia la composici�n y estructura interna de la Tierra, y los procesos por los cuales ha ido evolucionando a lo largo del tiempo geol�gico.
+
+                    En realidad, la Geolog�a comprende un conjunto de geociencias, as� conocidas actualmente desde el punto de vista de su pedagog�a, desarrollo y aplicaci�n profesional. Ofrece testimonios esenciales para comprender la Tect�nica de placas, la historia de la vida a trav�s de la Paleontolog�a, y c�mo fue la evoluci�n de �sta, adem�s de los climas del pasado. En la actualidad la geolog�a tiene una importancia fundamental en la exploraci�n de yacimientos minerales (Miner�a) y de hidrocarburos (Petr�leo y Gas Natural), y la evaluaci�n de recursos h�dricos subterr�neos (Hidrogeolog�a). Tambi�n tiene importancia fundamental en la prevenci�n y entendimiento de desastres naturales como remoci�n de masas en general, terremotos, tsunamis, erupciones volc�nicas, entre otros. Aporta conocimientos clave en la soluci�n de problemas de contaminaci�n medioambiental, y provee informaci�n sobre los cambios clim�ticos del pasado. Juega tambi�n un rol importante en la Geotecnia y la Ingenier�a Civil. Tambi�n se trata de una disciplina acad�mica con importantes ramas de investigaci�n. Por extensi�n, han surgido nuevas ramas del estudio del resto de los cuerpos y materia del sistema solar (astrogeolog�a o geolog�a planetaria).</p>
+                <img src="imagenes/evolucion.jpg"><!--imagen titulo 1-->
+            </div>
+            <div class="colu3"> <!--caja que contiene el aside-->
+                <div class="aside"><!--menu aside--> 
+                    <h2>Noticias Geologicas</h2><!--subtitulo 1-->
+                    <img src="imagenes/geologia.png" width="300" height="200"><!--imagen subtitulo 1-->
+                    <h4><a href="https://www.google.com.co/search?q=geologia&espv=2&biw=1366&bih=667&tbm=nws&source=lnms&sa=X&ved=0ahUKEwjUi72mvsHLAhWJXB4KHd1jDI0Q_AUIBygC&dpr=1">Noticias Geologicas</a></h4><!--palabra linkiada-->
+                    <h2>Departamento de geociencias Universidad Nacional de Colombia</h2><!--subtitulo 2-->
+                    <img src="imagenes/geociencias.jpg" width="300" height="200"><!--imagen subtitulo 2-->
+                    <h4><a href="http://ciencias.bogota.unal.edu.co/departamentos/geociencias">Departamento de Geociencias</a></h4><!--palabra linkiada-->
                 </div>
-
-
-                <div id="clear:both;"></div>
-
-
-                <nav> <!-- NUEVA UTILIDAD HTML%-->
-
-                    <ul> <!-- Lista no Ordenada--> 
-                        <li>
-                            <a href="index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="entrada1.html">Pagina1</a>
-                        </li>
-
-                        <li>
-                            <a href="entrada2.html">Pagina2</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Pagina3</a>
-                        </li>
-
-                    </ul>
-
-                </nav>
-                <div id="clear:both;"></div>
-            </header>
-
-            <br>
-            <hr>
-
-            <section> <!-- Contenido PRincipal-->
-
-
-                <h2> CONTENIDO DE LA PAGINA WEB </h2>
-
-
-                <div id="banner">
-                    <div id="contieneBanner">
-                        <h3>Titulo del banner</h3>
-                        <p>texto del banner </p>
-
-                    </div>
-                </div>
-
-                <article>
-                    <div class="contiene_articulo" id="primerarticulos">
-                        <div class="ImagenArticulo" id="imga">   
-                                                <!--Maquetar Imagenes Nro.1 -->
-
-                        
-                        
-                        
-                        </div>
-                        <!--Articulo Nro.1 -->
-                        <h3>Titulo Articulo</h3>
-                        <p>Lorem..Hacemos envío de la lectura correspondiente a la sesión del 16 de marzo, y los vídeos mencionados en la clase:
-
-                            Observatorio de Paz y Conflicto (2015). Desmovilización individual de integrantes de organizaciones guerrilleras. Alcances y problemáticas. Bogotá: Universidad Nacional de Colombia.
-                        </p>
-                    </div>
-                </article>
-
-
-
-                <article>
-                    <div class="contiene_articulo">
-                        <div class="ImagenArticulo" id="imga2">   </div>
-                        <!--Articulo Nro.1 -->
-                        <h3>Titulo Articulo</h3>
-                        <p>Lorem..Hacemos envío de la lectura correspondiente a la sesión del 16 de marzo, y los vídeos mencionados en la clase:
-
-                            Observatorio de Paz y Conflicto (2015). Desmovilización individual de integrantes de organizaciones guerrilleras. Alcances y problemáticas. Bogotá: Universidad Nacional de Colombia.
-                        </p>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="contiene_articulo" id="tercerarticulos">
-                        <div class="ImagenArticulo" id="imga3">   </div>
-                        <!--Articulo Nro.1 -->
-                        <h3>Titulo Articulo</h3>
-                        <p>Lorem..Hacemos envío de la lectura correspondiente a la sesión del 16 de marzo, y los vídeos mencionados en la clase:
-
-                            Observatorio de Paz y Conflicto (2015). Desmovilización individual de integrantes de organizaciones guerrilleras. Alcances y problemáticas. Bogotá: Universidad Nacional de Colombia.
-                        </p>
-                    </div>
-                </article>
-            </section>   
-            <br><br>
-            <footer>
-
-                <h5>(C) Cristian martinez y Andrés Manrique</h5>
-
-                <h6>2016 - Grafica</h6>
-
-
-            </footer>
+            </div>
+            <div class="footer"> <!--caja pie de pagina-->        
+                <p class="piepag" >Elaborado por: <b>Adrian Rincon</b><br>           
+                    Universisdad Nacional de Colombia<br>Bogot� D.C. 2016
+                </p>        
+            </div>
         </div>
 
 
 
-
     </body>
+
 </html>

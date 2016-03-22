@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+html { /*Afecta a todo el codigo */
+    font-family: Times New Roman;  /*Le da por defecto a toda la pagina el tipo de texto Times New Roman */
+    background:#26768F; 
+}
+
+a{/*para toda la etiqueta a*/
+    color: #ffffff;/*color blanco*/
+    text-decoration:none;/*sin decoracion*/
+
+} 
+p a{ /*todas las etiquetas a dentro de p*/
+    color: #0000FF;/*color azul*/
+    font-weight: bold; /*negrilla*/
+    text-decoration: underline; /*subrayado*/
+}
+
+.aside a:hover{/*etiquetas a dentro de la clase aside*/
+    text-decoration:underline;/*subrayado*/
+}
+
+p { /*etiquetas parrafo*/
+    text-align: justify; /*texto justificado*/  
+}
+
+a:hover{ /*etiqueta a cuando el cursor esta encima*/
+    text-decoration:none;/*no decoracion*/
+
+}
+
+img{ /*etiqueta imagen*/
+    height: 100%;/* toda su altura*/ 
+    width: 100%;/*todo su ancho*/
+}
+
+.head { /*caja de clase=head*/
+    background-image: url(../imagenes/fondo3.jpg);/*imagen como fondo*/ 
+    background-size: 100% 100%; /*100% de la imagen*/
+    color: #ffffff; /*color letra blanca*/
+    padding: 20px;/*pading de 20px por todos sus lados*/
+    text-align: center; /*texto centrado*/
+    margin-bottom: 5px;/*margen inferior de 5 px*/
+}
+
+.menu ul { /*etiqueta ul dentro de la clase menu*/
+    list-style-type: none;/*sin decoracion*/
+    margin: 0; /*no margen*/
+    padding: 0; /*no padding*/
+}
+
+.menu li  { /*etiqueta li dentro de la clase menu*/
+    padding: 3px; /*padding de 3px*/
+    margin-bottom: 10px;/*margen de 10px*/
+    background-color : #4D8D32;/*color verde oliva de fondo*/ 
+    color: #ffffff; /*letra blanca*/
+    text-align: center;/*texto centrado*/
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgb(0,0,0,0.24);/*sombra de cada opcion*/ 
+    -webkit-transition-property: width;/*ancho del elemnto se afecta con animacion*/
+    -webkit-transition-duration: 5s;/*duracion de 5s*/
+    transition-property: width;/*ancho del elemnto se afecta con animacion*/
+    transition-duration: 5s;  /*duracion de 5s*/
+}
+
+.menu li:hover { /*etiqueta li dentro de la clase menu cuando el cursor esta encima*/
+    background-color: #0099cc;/*color de fonod azul agua marina*/ 
+    width: 120% ;/*aumenta su tama�o */
+}
+
+.menu:after { /*elementos de la caja menu estan vacios*/
+    content: "";/*sin texto*/ 
+    clear: both; /*no elementos flotantes*/
+    display: block; /*elementos mostrados*/
+}
+
+.aside { /*caja clase aside*/
+    background-color: #4D8D32; /*fondo de color verde oliva*/
+    padding: 10px;  /*padding de 10px*/
+    color: #ffffff; /*color blanco*/
+    text-align: center;/*texto centrado*/ 
+    font-size: 20px; /*tama�o de fuente de 20 px*/
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);/*sombra de la caja*/
+}
+
+.mapa{ /*calse mapa*/
+    color:black; /*color negro para letra*/
+
+}
+
+.principal{/*caja principal*/
+    position:relative;/*posicion relativa*/
+    width:100%;/*ancho al 100%*/
+    height:100%;/*alto al 100%*/
+}
+
+
+
+.menu{/*caja del menu que esta contenida en la caja principal*/
+    width:20%;/*ancho al 20%*/
+    /*position:relative;/*poicion absolute respecto a la caja contenedora*/
+    top:2px;/*a 2px del margen de arriba*/
+    botton:30px;/*no px*/
+    left:10px;/*no px*/
+    right:90px;/*no px*/
+    float:right;
+
+}
+
+
+.texto{/*caja texto contenida dentro la principal*/
+    width:50%;/*ancho al 50%*/
+    position:relative;/*posicion absoluta dentro de la caja contenedora*/
+    top:2px;/*distancia del margen superior*/
+    botton:10px;/*no margen inferior*/
+    left:50px;/*dezplazado 330 px desde el margen izquierdo*/
+    right:10px;/*no hay desplzamiento desde elmargen derecho*/
+    margin: auto;
+}
+
+.colu3{/*caja colu 3 dentro de la caja principal*/
+    width:20%;/*ancho al 20%*/
+    position:absolute;/*posicion absoluta dentro de la caja contenedora*/
+    top:2px;/*distancia del margen superior*/
+    botton:10px;/*no margen inferior*/
+    left:40px;/*no hay desplzamiento desde elmargen izquierdo*/
+    right:2px;/*2px desplzamiento desde elmargen derecho*/
+    float:left;
+}
+
+
+.footer{/*caja colu 3 dentro de la caja principal*/
+    width:100%;/*ancho al 100%*/
+    position:relative;/*posicion absoluta dentro de la caja contenedora*/
+    bottom:-3000px;/*distancia desde el margen margen inferior*/
+    float:left;
+}
+
+.piepag {/*caja con clase piepag*/
+    color:black;/*letra color negra*/
+    position:relative;/*posicion absoluta dentro de la caja contenedora*/
+    border-style:solid;/*borde de estilo solida de color negra*/
+    text-align: center;/*texto centrado*/
+    background:#A4D78D;/*color de fondo verde claro*/
+}
+
+
+
+@media only screen and (max-width: 480px) {/*cuando la pantalla sea menor a 480 px responsive desing*/
+
+    .colu3{ /*clases menu*/
+        width: 100%; /*su ancho ocupara el 100% del ancho de la pantalla*/
+    }
+    .texto{ /*clases menu*/
+        width: 100%; /*su ancho ocupara el 100% del ancho de la pantalla*/
+    }
+    .menu{ /*clases menu*/
+        width: 100%; /*su ancho ocupara el 100% del ancho de la pantalla*/
+    }
+
+}
+

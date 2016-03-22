@@ -9,12 +9,26 @@ html { /*Afecta a todo el codigo */
 a{/*para toda la etiqueta a*/
     color: #ffffff;/*color blanco*/
     text-decoration:none;/*sin decoracion*/
+    text-align: center;
 
 } 
 p a{ /*todas las etiquetas a dentro de p*/
     color: #0000FF;/*color azul*/
     font-weight: bold; /*negrilla*/
     text-decoration: underline; /*subrayado*/
+    text-align: center;
+}
+h2 a:hover{
+    color: #0099cc;/*cambia de color a las palabras cuando el cursor está encima de ellas.*/
+    text-decoration:none;/*sin decoracion*/
+    text-align: center;
+
+}
+h2 a{
+    color: ffffff;/*color blanco a los h2*/
+    text-decoration:none;/*sin decoracion*/
+    text-align: auto;
+
 }
 
 .aside a:hover{/*etiquetas a dentro de la clase aside*/
@@ -22,7 +36,8 @@ p a{ /*todas las etiquetas a dentro de p*/
 }
 
 p { /*etiquetas parrafo*/
-    text-align: justify; /*texto justificado*/  
+    text-align: justify; /*texto justificado*/
+    font-size: 30px;
 }
 
 a:hover{ /*etiqueta a cuando el cursor esta encima*/
@@ -65,7 +80,7 @@ img{ /*etiqueta imagen*/
 
 .menu li:hover { /*etiqueta li dentro de la clase menu cuando el cursor esta encima*/
     background-color: #0099cc;/*color de fonod azul agua marina*/ 
-    width: 120% ;/*aumenta su tama�o */
+    width: 90% ;/*aumenta su tama�o */
 }
 
 .menu:after { /*elementos de la caja menu estan vacios*/
@@ -137,13 +152,12 @@ img{ /*etiqueta imagen*/
 }
 
 .piepag {/*caja con clase piepag*/
+    text-decoration:none;/*no decoracion*/
     color:black;/*letra color negra*/
     position:relative;/*posicion absoluta dentro de la caja contenedora*/
-    border-style:solid;/*borde de estilo solida de color negra*/
     text-align: center;/*texto centrado*/
     background:#A4D78D;/*color de fondo verde claro*/
 }
-
 
 
 @media only screen and (max-width: 480px) {/*cuando la pantalla sea menor a 480 px responsive desing*/

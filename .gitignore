@@ -1,13 +1,17 @@
-# CakePHP 3
+#java specific
+*.class
 
-/vendor/*
-/config/app.php
-/tmp/*
-/logs/*
+#netbeans ignore personal stuff
+nbproject/
 
-# CakePHP 2
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
 
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+# Package Files #
+*.jar
+*.war
+*.ear

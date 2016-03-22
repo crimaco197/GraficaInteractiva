@@ -1,7 +1,8 @@
 
 html { /*Afecta a todo el codigo */
     font-family: Times New Roman;  /*Le da por defecto a toda la pagina el tipo de texto Times New Roman */
-    background:#26768F; 
+    background: url(../images/fondi.png); 
+    background-size: auto 120%;
 }
 
 a{/*para toda la etiqueta a*/
@@ -44,8 +45,25 @@ a:hover{ /*etiqueta a cuando el cursor esta encima*/
 }
 
 img{ /*etiqueta imagen*/
-    height: 100%;/* toda su altura*/ 
-    width: 100%;/*todo su ancho*/
+    margin: auto;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+
+.azultexto{
+    color: black;
+    font-size: 50px;
+    margin:0px 0px 0px 0px;
+
+}
+.gris{
+    color: black;
+    font-size: 30px;
+
+
+
 }
 
 .head { /*caja de clase=head*/
@@ -66,15 +84,15 @@ img{ /*etiqueta imagen*/
 .menu li  { /*etiqueta li dentro de la clase menu*/
     padding: 30px; /*padding de 3px*/
     margin-bottom: 10px;/*margen de 10px*/
-    background-color : #4D8D32;/*color verde oliva de fondo*/ 
+    background-color : #559DB3;/*color azul en el fondo de los botones del menu*/ 
     color: #ffffff; /*letra blanca*/
     text-align: center;/*texto centrado*/
     font-size: 40px;
-    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgb(0,0,0,0.24);/*sombra de cada opcion*/ 
-    /*-webkit-transition-property: width;/*ancho del elemnto se afecta con animacion*/
-    /*-webkit-transition-duration: 5s;/*duracion de 5s*/
-    /*transition-property: width;/*ancho del elemnto se afecta con animacion*/
-    /*transition-duration: 5s;  /*duracion de 5s*/
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgb(0,0,0,0.24);/*sombra de cada opcion*/ 
+    -webkit-transition-property: width;/*ancho del elemnto se afecta con animacion*/
+    -webkit-transition-duration: 5s;/*duracion de 5s*/
+    transition-property: width;/*ancho del elemnto se afecta con animacion*/
+    transition-duration: 5s;  /*duracion de 5s*/
 }
 
 .menu li:hover { /*etiqueta li dentro de la clase menu cuando el cursor esta encima*/
@@ -88,14 +106,6 @@ img{ /*etiqueta imagen*/
     display: block; /*elementos mostrados*/
 }
 
-.aside { /*caja clase aside*/
-    background-color: #4D8D32; /*fondo de color verde oliva*/
-    padding: 10px;  /*padding de 10px*/
-    color: #ffffff; /*color blanco*/
-    text-align: center;/*texto centrado*/ 
-    font-size: 20px; /*tama�o de fuente de 20 px*/
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);/*sombra de la caja*/
-}
 
 .mapa{ /*calse mapa*/
     color:black; /*color negro para letra*/
@@ -131,8 +141,16 @@ img{ /*etiqueta imagen*/
     right:10px;/*no hay desplzamiento desde elmargen derecho*/
     margin: auto;
 }
+.texto1{/*caja texto contenida dentro la principal*/
+    width:70%;/*ancho al 50%*/
+    position:relative;/*posicion absoluta dentro de la caja contenedora*/
+    top:2px;/*distancia del margen superior*/
+    botton:10px;/*no margen inferior*/
+    left:70px; /*se dezplazo 70 px desde el margen izquierdo*/
+    right:10px;/*no hay desplzamiento desde elmargen derecho*/
 
-.colu3{/*caja colu 3 dentro de la caja principal*/
+}
+.info{/*Afecta a los items que se encuentran en la primer columna a la izquierda*/
     width:20%;/*ancho al 20%*/
     position:absolute;/*posicion absoluta dentro de la caja contenedora*/
     top:2px;/*distancia del margen superior*/
@@ -155,24 +173,83 @@ img{ /*etiqueta imagen*/
     color:black;/*letra color negra*/
     position:relative;/*posicion absoluta dentro de la caja contenedora*/
     text-align: center;/*texto centrado*/
-    background:#A4D78D;/*color de fondo verde claro*/
+    background:#93C4D3;/*color azul en el fondo*/
 }
 
 * {
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 480px) {/*cuando la pantalla sea menor a 480 px responsive desing*/
 
-    .colu3{ /*clases menu*/
-        width: 100%; /*su ancho ocupara el 100% del ancho de la pantalla*/
+/*Comportamiento adaptativo*/
+
+@media only screen and (max-width: 1000px){
+    /*Se modifican las columnas de navegacion*/   
+    .info{ 
+        font-size: 14px;
+        width: 200px;    }
+    .texto{ 
+        font-size: 14px;
+        width: 200px;    }
+
+    .menu {
+        font-size: 14px;
+        width: 200px;
     }
-    .texto{ /*clases menu*/
-        width: 100%; /*su ancho ocupara el 100% del ancho de la pantalla*/
+    img{
+        margin: auto;
     }
-    .menu{ /*clases menu*/
-        width: 100%; /*su ancho ocupara el 100% del ancho de la pantalla*/
+    /*Se modifica el tamaño de las fuentes de los distintos elementos de la página*/
+    .header{
+        font-size: 40px;	   
+    } 
+    h1{
+        font-size: 20;
     }
 
+    h2{
+        font-size: 18px; 
+    }
+
+    p {
+        font-size: 16px;
+    }
+    
+}
+
+@media only screen and (max-width: 480px){
+
+    /*Se modifica el tamaño de las fuentes de los distintos elementos de la página*/
+    .header{
+        font-size: 35px;	   
+    }
+    img{
+        margin: auto;
+    }
+    h1{
+        font-size: 18;
+    }
+
+    h2{
+        font-size: 16px; 
+    }
+
+
+    p {
+        font-size: 17px;
+    }
+
+    /*Se modifican las columnas de navegacion*/   
+    .info{ 
+        font-size: 14px;
+        width: 200px;    }
+    .texto{
+        font-size: 14px;
+        width: 200px;    }
+
+    .menu {
+        font-size: 14px;
+        width: 200px;
+    }
 }
 

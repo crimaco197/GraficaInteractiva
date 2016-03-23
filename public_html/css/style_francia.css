@@ -1,8 +1,39 @@
 
+/**Las siguientes etiquetas afectaran a los distintos dipos de Titulos, h1, h2, h3, h4, h5, h6. 
+Algunos de ellos pueden ir acompañados de otra etiqueta con el fin de ser mas especifico. */
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+
+h2 a:hover{
+    color: #0099cc;/*cambia de color a las palabras cuando el cursor está encima de ellas.*/
+    text-decoration:none;/*sin decoracion*/
+    text-align: center;
+}
+
+h2 a{
+    color: ffffff;/*color blanco a los h2*/
+    text-decoration:none;/*sin decoracion*/
+    text-align: auto;
+}
+
+a h2{
+    color: black;
+    font-size: 50px;
+    text-align: left;
+}
+
+/*___________________Finaliza los modificadores a Titulos.___________________*/
+
+
+/*Las siguientes etiquetas modificarán la letra, los parrados, las listas, botones, etc.
+Tambien modificarán el espacio que se le dará a cada columna dentro de la pantalla. */
+
 html { /*Afecta a todo el codigo */
     font-family: Times New Roman;  /*Le da por defecto a toda la pagina el tipo de texto Times New Roman */
-    background: url(../images/fondi.png); 
-    background-size: auto 120%;
+    background: url(../images/fondi.png); /*El dondo de todas las paginas. */
+    background-size: auto 120%; /*Tamaño del fondo. */
 }
 
 a{/*para toda la etiqueta a*/
@@ -11,245 +42,287 @@ a{/*para toda la etiqueta a*/
     text-align: center;
 
 } 
-p a{ /*todas las etiquetas a dentro de p*/
+p a{ /*modifica las etiquetas parrafos seguidos de la etiqueta a, le da especialmente la negrilla a las palabras. */
     color: #0000FF;/*color azul*/
     font-weight: bold; /*negrilla*/
     text-decoration: underline; /*subrayado*/
     text-align: center;
 }
-h2 a:hover{
-    color: #0099cc;/*cambia de color a las palabras cuando el cursor está encima de ellas.*/
-    text-decoration:none;/*sin decoracion*/
-    text-align: center;
 
-}
-h2 a{
-    color: ffffff;/*color blanco a los h2*/
-    text-decoration:none;/*sin decoracion*/
-    text-align: auto;
-
-}
-
-.aside a:hover{/*etiquetas a dentro de la clase aside*/
-    text-decoration:underline;/*subrayado*/
-}
-
-p { /*etiquetas parrafo*/
+/*modifica los parrafos*/
+p {
     text-align: justify; /*texto justificado*/
     font-size: 30px;
 }
 
-a:hover{ /*etiqueta a cuando el cursor esta encima*/
-    text-decoration:none;/*no decoracion*/
-
+/*esta etiqueta identifica cuando el cursor esta sobre esa palabra, boton, etc*/
+a:hover{ 
+    text-decoration:none;
 }
 
-img{ /*etiqueta imagen*/
-    margin: auto;
-}
-h1{
-    text-align: center;
-    font-size: 100px;
+/*le da el color azul a los link de la referencia */
+li a{ 
+    color: blue;
 }
 
-.azultexto{
-    color: black;
-    font-size: 50px;
-    margin:0px 0px 0px 0px;
-
-}
+/* Identifica las palabras que dirigen a un nueva pagina (son las que están subrayadas) y las pone de color negro y cambia su tamaño de letra. */
 .gris{
     color: black;
     font-size: 30px;
-
-
-
 }
 
-.head { /*caja de clase=head*/
-    background-image: url(../imagenes/fondo3.jpg);/*imagen como fondo*/ 
-    background-size: 100% 100%; /*100% de la imagen*/
-    color: #ffffff; /*color letra blanca*/
-    padding: 20px;/*pading de 20px por todos sus lados*/
-    text-align: center; /*texto centrado*/
-    margin-bottom: 5px;/*margen inferior de 5 px*/
+/*.head { /*caja de clase=head*/
+/*   background-size: 100% 100%; /*100% de la imagen*/
+/*   color: #ffffff; /*color letra blanca*/
+/*  padding: 20px;/*pading de 20px por todos sus lados*/
+/*  text-align: center; /*texto centrado*/
+/*  margin-bottom: 5px;/*margen inferior de 5 px*/
+/*}
+
+
+/*-------------MENU-------------*/
+
+/*Le da el tamaño y la posicion a los botones*/
+button{
+    padding: 30px; /*padding de 3px*/
+    text-align: center;/*texto centrado*/
+    font-size: 40px;
+    color: #ffffff;
+    background-color : #559DB3;
+    width:100%;/*ancho al 20%*/
+    height: 100%;
 }
 
+/*Posicion del menu*/
+.menu{
+    width: 20%;/*ancho al 20%*/
+    height: 1000%;
+    top: 20px;/*a 2px del margen de arriba*/
+    left: 10px;
+    right: 90px;
+    float: right;
+}
 .menu ul { /*etiqueta ul dentro de la clase menu*/
     list-style-type: none;/*sin decoracion*/
     margin: 0; /*no margen*/
     padding: 0; /*no padding*/
 }
 
-.menu li  { /*etiqueta li dentro de la clase menu*/
-    padding: 30px; /*padding de 3px*/
-    margin-bottom: 10px;/*margen de 10px*/
-    background-color : #559DB3;/*color azul en el fondo de los botones del menu*/ 
-    color: #ffffff; /*letra blanca*/
-    text-align: center;/*texto centrado*/
-    font-size: 40px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgb(0,0,0,0.24);/*sombra de cada opcion*/ 
-    -webkit-transition-property: width;/*ancho del elemnto se afecta con animacion*/
-    -webkit-transition-duration: 5s;/*duracion de 5s*/
-    transition-property: width;/*ancho del elemnto se afecta con animacion*/
-    transition-duration: 5s;  /*duracion de 5s*/
+/*Permite que cuando el cursor esté sobre los botones del menú pueda observarse un cambio en el tamaño de los botones. */
+.menu li:hover {     
+    width: 90% ; /* disminuye el tamaño de cada boton a un 90% */
 }
 
-.menu li:hover { /*etiqueta li dentro de la clase menu cuando el cursor esta encima*/
-    background-color: #0099cc;/*color de fonod azul agua marina*/ 
-    width: 90% ;/*aumenta su tama�o */
+/*-------------FIN MENU-------------*/
+
+
+/*La lista qe se encuentra en el Site_Map le cambia su color original (azul) a color Negro. */
+.ListMap{ 
+    color: black; 
 }
 
-.menu:after { /*elementos de la caja menu estan vacios*/
-    content: "";/*sin texto*/ 
-    clear: both; /*no elementos flotantes*/
-    display: block; /*elementos mostrados*/
-}
-
-
-.mapa{ /*calse mapa*/
-    color:black; /*color negro para letra*/
-
-}
-
-.principal{/*caja principal*/
-    position:relative;/*posicion relativa*/
-    width:100%;/*ancho al 100%*/
-    height:100%;/*alto al 100%*/
+/*Es la parte intermedia entre el pie de pagina y el encabezado, en la cual irá toda la información. */
+.section{
+    position: relative; /*posicion relativa*/
+    width: 100%; /*ancho al 100%*/
+    height: 100%; /*alto al 100%*/
 }
 
 
 
-.menu{/*caja del menu que esta contenida en la caja principal*/
-    width:20%;/*ancho al 20%*/
-    height: 1000%;
-    /*position:relative;/*poicion absolute respecto a la caja contenedora*/
-    top:20px;/*a 2px del margen de arriba*/
-    left:10px;
-    right:90px;
-    float:right;
-
-}
-
-
-.texto{/*caja texto contenida dentro la principal*/
-    width:50%;/*ancho al 50%*/
-    position:relative;/*posicion absoluta dentro de la caja contenedora*/
-    top:2px;/*distancia del margen superior*/
-    botton:10px;/*no margen inferior*/
-    left:50px;/*dezplazado 330 px desde el margen izquierdo*/
-    right:10px;/*no hay desplzamiento desde elmargen derecho*/
+/* Son los distintos tipos de texto que se pueden encontrar en la pagina. */
+.texto{
+    width: 50%;/*ancho al 50%*/
+    position: relative;
+    top: 2px;/*distancia entre la margen superior y el texto*/
+    botton: 10px;/*no margen inferior*/
+    left: 50px;/*dezplazado 330 px desde el margen izquierdo*/
+    right: 10px;/*no hay desplzamiento desde elmargen derecho*/
     margin: auto;
 }
-.texto1{/*caja texto contenida dentro la principal*/
-    width:70%;/*ancho al 50%*/
-    position:relative;/*posicion absoluta dentro de la caja contenedora*/
-    top:2px;/*distancia del margen superior*/
-    botton:10px;/*no margen inferior*/
-    left:70px; /*se dezplazo 70 px desde el margen izquierdo*/
-    right:10px;/*no hay desplzamiento desde elmargen derecho*/
-
+.texto1{
+    width: 70%;/*ancho al 50%*/
+    position: relative;
+    top: 2px; /*distancia entre la margen superior y el texto*/
+    botton: 10px;/*no margen inferior*/
+    left: 70px; /*se dezplazo 70 px desde el margen izquierdo*/
+    right: 10px;/*no hay desplzamiento desde elmargen derecho*/
 }
-.info{/*Afecta a los items que se encuentran en la primer columna a la izquierda*/
-    width:20%;/*ancho al 20%*/
-    position:absolute;/*posicion absoluta dentro de la caja contenedora*/
-    top:2px;/*distancia del margen superior*/
-    botton:10px;/*no margen inferior*/
-    left:40px;/*no hay desplzamiento desde elmargen izquierdo*/
-    right:2px;/*2px desplzamiento desde elmargen derecho*/
-    float:left;
+/*___________________Finalizan los tipos de textos___________________*/
+
+/*Afecta a los items que se encuentran en la primer columna a la izquierda*/
+.info{
+    width: 20%;/*ancho al 20%*/
+    position: absolute;/*posicion absoluta dentro de la caja contenedora*/
+    top: 2px;/*distancia del margen superior*/
+    botton: 10px;/*no margen inferior*/
+    left: 40px;/*no hay desplzamiento desde elmargen izquierdo*/
+    right: 2px;/*2px desplzamiento desde elmargen derecho*/
+    float: left;
 }
 
-
-.footer{/*caja colu 3 dentro de la caja principal*/
-    width:100%;/*ancho al 100%*/
-    position:relative;/*posicion absoluta dentro de la caja contenedora*/
-    bottom:-100px;/*distancia desde el margen margen inferior*/
-    float:left;
+/*La posicion en que irá el piede de pagina, la forma y todos los detalles que éste pueda tener.*/
+.footer{
+    width: 100%;/*ancho al 100%*/
+    position: relative;
+    bottom: -100px;/*posicion que debe ir el pie de pagina*/
+    float: left;
 }
 
 .piepag {/*caja con clase piepag*/
-    text-decoration:none;/*no decoracion*/
-    color:black;/*letra color negra*/
-    position:relative;/*posicion absoluta dentro de la caja contenedora*/
-    text-align: center;/*texto centrado*/
-    background:#93C4D3;/*color azul en el fondo*/
+    text-decoration: none; /*No subraya el texto que está en el pie de pagina, nombre, univeridad, etc. */
+    color: black;  /*color de la letra*/
+    position: relative;
+    text-align: center; /*texto centrado*/
+    background: #93C4D3; /*color azul en el fondo*/
 }
 
-* {
-    box-sizing: border-box;
+/*___________________Fin Pie de Pagina___________________*/
+
+
+/*___________________Finaliza los modificadores a Letras en general.___________________*/
+
+
+
+/*etiqueta imagen, afecta el tamaño de las imagenes para que tengan una mayor eficacia.*/
+img{ 
+    margin: auto;
+    width: 100%;
 }
 
+a img{
+    width: 50px;
+}
 
-/*Comportamiento adaptativo*/
+span img{
+    width: auto;
+}
 
-@media only screen and (max-width: 1000px){
-    /*Se modifican las columnas de navegacion*/   
+/*___________________Finaliza la etiqueta imagen___________________*/
+
+
+
+/*La "Etiqueta @media" Afectará el comportamiento de la pantalla, cuando se minimece o maximece ó se presente en otro dispositivo. */
+
+@media only screen and (max-width: 1500px){
+
     .info{ 
         font-size: 14px;
-        width: 200px;    }
+        width: 20%;   
+    }
+
     .texto{ 
         font-size: 14px;
-        width: 200px;    }
+        width: 40%;  
+        left: 20px;
+        right: 10px;
+
+    }
+
+    .texto1{ 
+        font-size: 14px;
+        width: 60%;   
+    }
 
     .menu {
         font-size: 14px;
-        width: 200px;
+        width: 20%;
     }
+
     img{
         margin: auto;
+
+        width: 100%;
+        height: 70%;
     }
-    /*Se modifica el tamaño de las fuentes de los distintos elementos de la página*/
-    .header{
-        font-size: 40px;	   
-    } 
+
     h1{
-        font-size: 20;
+        font-size: 20px;
     }
 
     h2{
         font-size: 18px; 
     }
+    a h2{
+        font-size: 22px;
+
+    }
 
     p {
-        font-size: 16px;
+        font-size: 18px;
     }
     
+    p a{
+        font-size: 12px;
+    }
+
+    .gris{
+        font-size: 18px;
+    }
+
+    button{
+        font-size: 16px;
+    }
+
 }
 
 @media only screen and (max-width: 480px){
-
-    /*Se modifica el tamaño de las fuentes de los distintos elementos de la página*/
-    .header{
-        font-size: 35px;	   
+    .info{ 
+        font-size: 14px;
+        width: 20%;   
     }
+
+    .texto{
+        font-size: 14px;
+        width: 40%;  
+        left: 20px;
+        right: 10px;
+    }
+
+    .texto1{
+        font-size: 14px;
+        width: 60%;   
+    }
+
+    .menu {
+        font-size: 14px;
+        width: 20%;
+    }
+
+
     img{
         margin: auto;
+        width: 100%;
+        height: 50%;       
     }
+
     h1{
-        font-size: 18;
+        font-size: 18px;
     }
 
     h2{
         font-size: 16px; 
     }
 
+    a h2{
+        font-size: 20px;
+    }
 
     p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
-    /*Se modifican las columnas de navegacion*/   
-    .info{ 
-        font-size: 14px;
-        width: 200px;    }
-    .texto{
-        font-size: 14px;
-        width: 200px;    }
-
-    .menu {
-        font-size: 14px;
-        width: 200px;
+    p a{
+        font-size: 10px;
     }
+
+    .gris{
+        font-size: 16px;
+    }
+
+    button{
+        font-size: 16px;
+    }
+
 }
-
+/*___________________Finaliza la Adaptación a la patantalla___________________*/
